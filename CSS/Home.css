@@ -1,0 +1,798 @@
+/* Path: Project_Web\Home.css */
+
+html {
+    overflow-y: scroll;
+    font-size: 10px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../Images/Map/AWC-2019-e1654434844451.jpg) center center fixed no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+body,
+div,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dd,
+dt,
+blockquote,
+fieldset,
+legend,
+label,
+textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    outline: none !important;
+}
+
+div {
+    display: block;
+}
+
+
+a {
+    color: #fbaf17;
+    text-decoration: none;
+    outline: none !important;
+}
+
+button {
+    background: #fff;
+    border: none;
+    outline: none !important;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* The div that contains the whole page */
+.content-body {
+    background-color: rgba(37, 37, 37, .85);
+}
+/* HEAD SECTION (head-wrapper) */
+.head {
+    position: fixed;
+    top:0;
+    height: 70px;
+    padding:10px;
+    width: 100%;
+    display: flex;
+    box-shadow: 0 0 10px #000;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+/* the div that contains the logo and the search bar */
+.head-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-wrapper form.search {
+    width: 100%;
+}
+.searching {
+    width:350px;
+    max-width: 350px;
+    color: #000;
+}
+.menu-top li {
+    float: left;
+}
+
+/* CSS of the login and register button */
+.menu-top li a {
+    color: rgb(255,255,255);
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 60px;
+    display: inline-block;
+    background: url(../Images/Icon-Logo/line-nav.jpg) center left no-repeat;
+}
+
+/* The above code is selecting the first list item element inside an HTML element with the class
+"menu-top" and applying a CSS rule to it. The CSS rule is floating the element to the right side of
+its container. */
+.menu-top li:nth-of-type(1) {
+    float: right;
+}
+
+.menu-top li:nth-of-type(2) a {
+    background: none;
+}
+
+.detail-title {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* MENU SECTION(menu-wrapper) */
+
+.mu-wr {
+    position: fixed;
+    transition: width .4s ease .1s;
+    top: 68px;
+    box-shadow: 0 10px 10px #000;
+    z-index: 9999;
+}
+/* css của menu không bao gồm nội dung */
+.tab-link {
+    transition: width .4s ease .1s;
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 288px;
+    user-select: none;
+}
+
+
+/* Khi chưa hover, width sẽ được thiết lập 70px */
+.tab-link:not(:hover) {
+    width: 70px;
+}
+
+/* Khi chưa hover, width của menu sẽ được thiết lập 70px */
+.tab-link:not(:hover) .menu-inner {
+    width: 70px;
+}
+
+/* Khi chưa hover, các nội dung sẽ được ẩn cho dến khi đươc hover */
+.tab-link:not(:hover) .logo-st {
+    visibility: hidden;
+}
+/* When not hover, the content */
+.tab-link:not(:hover) .patch {
+    visibility: visible;
+}
+/* tên web sẽ di chuyển sau khi hover vào menu .2s */
+.logo-st {
+    transition: visibility 0s ease .2s;
+}
+
+/* nội dung của patch và mode sẽ di chuyển đầy đủ sau khi hover vào menu .2s */
+.patch {
+    transition: visibility 0s ease .2s;
+    visibility: hidden;
+}
+
+/* set màu nền cho head và menu */
+.info-tab {
+    background-color: rgb(22, 14, 30);
+}
+
+/* set màu nền cho các box ở menu */
+.info-link {
+    background-color: rgb(68, 68, 93);
+}
+
+/* CSS CỦA CÁC CONTENT MENU */
+/* hover vào menu, width sẽ được thiết lập 288px */
+.menu-inner {
+    transition: width .4s ease .1s;
+    display: flex;
+    flex-direction: column;
+    width: 288px;
+}
+
+.content-logo {
+    display: flex;
+}
+
+/* set the css for the items in the menu */
+.item-logo {
+    padding:3px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 15%;
+    color: #fff !important;
+}
+
+/* khi hover vào các mode, nội dung sẽ được underline */
+.text-underline:hover {
+    text-decoration: underline;
+}
+.img-pos {
+    margin:5px;
+
+}
+/* điều chỉnh kích thước của mode và patch của menu */
+.text-logo {
+    font-size: 14px;
+    white-space: nowrap;
+}
+/* điều chỉnh border của các mode và patch */
+.menu-item {
+    border-radius:10px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.transition {
+    transition: visibility 0s ease .2s;
+}
+/* hightlight chữ META */
+.f-word {
+    color: #fbaf17;
+}
+
+/* set chữ aov là màu trắng */
+.s-word {
+    color: #fff;
+}
+
+.otherCt-1 {
+    display:none;
+}
+
+/* tạo các grid với khoảng cách 10px */
+.ct-gap {
+    gap:10px;
+    grid-gap:10px;
+}
+
+/* nền của các chức năng khi được chọn (Home, stats, etc) */
+.btn-cl {
+    background-color: rgb(93, 68, 93);
+}
+
+.text {
+    color: #fff!important;
+}
+
+.menu-wrapper {
+    visibility: hidden;
+}
+
+/* the empty space between the logo and the search bar */
+.empty-slide {
+    width: 320px;
+    flex-shrink: 0;
+}
+
+/* hightlight the box when hover */
+.item-logo:hover {
+    background-color: #fbaf17;
+    color: #000 !important;
+}
+/* hightlight the word META when hover */
+.item-logo:hover .word {
+    color: #000 !important;
+}
+/* MAIN CONTENT(content-wrapper) */
+/* thiết lập main content fit với màn hình */
+.wr-tt {
+    display: flex;
+    flex-direction: column;
+    max-width: 1815px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* css phần đầu tiên của Content */
+.ct-wr {
+    display: flex;
+    width: 100%;
+}
+/* điều chỉnh cho nội dung nằm trong Content */
+.ct-02 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* điều chỉnh gap của row và column */
+.ge-ct {
+    row-gap:20px;
+    column-gap:20px;
+}
+
+/* css của phần menu khi đang ở content */
+.ep-ct {
+    transition: width .4s ease .1s;
+    min-width:70px;
+    flex-shrink: 0;
+    width:288px;
+}
+/* menu sẽ thu lại 80px và nội dung sẽ hiển thị bth */
+.ep-ct {
+    width:80px;
+}
+
+.search {
+    width: 100%;
+}
+.para {
+    width: 100%;
+    min-width: 375px;
+}
+
+.search {
+    background: #000 url(../Images/bt-search.png) right center no-repeat;
+    background-size: auto 100%;
+    padding: 5px 50px 5px 10px;
+    border: 2px solid #a08945;
+    text-align: center;
+}
+
+.input-bx2 {
+    line-height: 30px;
+}
+
+.search input {
+    border: none;
+    background-color: transparent;
+    color: #acacac;
+    width: 100%;
+    outline: none!important;
+}
+
+.f-color {
+    color: rgb(251,175,23);
+}
+
+.sub-title {
+    color: #fff;
+    font-size:17px;
+    font-weight: 700;
+}
+
+.search-in {
+    max-width: 500px;
+    width: 100%;
+    height: 28px;
+}
+
+/* Champions */
+
+.table-champ {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 375px;
+    width: 100%;
+    max-width: 1135px;
+}
+
+.list-champ {
+    overflow: hidden;
+    width: 80%;
+}
+.list-champ li .champions {
+    padding:15%;
+}
+.list-champ li .champions .name {
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* chỉnh border và thêm box-shadow cho khung tướng */
+.list-champ li .champions img {
+    width: 100%;
+    border: 3px solid #a08945;
+    box-shadow: 0 0 10px #a08945;
+}
+
+.list-champ li {
+    width: 15%;
+    float: left;
+}
+
+.table-st {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.te-st {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    flex-grow: 1;
+    min-width: 375px;
+    max-width: 100%;
+}
+
+.roles {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1815px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.ft {
+    display: flex;
+    justify-content: center;
+}
+
+.ft-bg {
+    background-color: rgb(22, 14, 30);
+}
+
+.ft-content {
+    display: flex;
+    align-items: center;
+    min-width: 375px;
+    width: 100%;
+    max-width: 1135px;
+}
+
+.left-text {
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.text-st {
+    display: flex;
+    flex-shrink: 1;
+    flex-grow: 1;
+    min-width: 375px;
+    max-width: 100%;
+}
+
+.left-grid {
+    display:grid;
+    gap:20px;
+    grid-gap:20px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.left-para {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.right-text {
+    height: auto;
+    width: 100%;
+    max-width: 320px;
+    min-width: 200px;
+    flex-shrink: 2;
+    padding: 0!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-para {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-footer {
+    height: auto;
+    width: 100%;
+    max-width: 320px;
+    min-width: 200px;
+    flex-shrink: 2;
+    padding: 0!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Feedback */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 320px;
+    min-width: 200px;
+    flex-shrink: 2;
+    padding: 0!important;
+}
+
+.fb-form {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+}
+
+.fb-form::placeholder {
+    color: #666;
+  }
+
+.feedback-form-ct {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    outline: none;
+    transition: border-color .2s;
+    margin-bottom: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+  
+.feedback-form::placeholder {
+    color: #666;
+}
+  
+.feedback-form-ct:focus {
+    border-bottom-color: #ddd;
+}
+  
+.feedback-form.message {
+    margin-top: 40px;
+}
+
+.feedback-form.buttons {
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.feedback-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 26px;
+  }
+
+.feedback-button {
+    background: none;
+    border: none;
+    color: rgb(251,175,23);
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+  
+.feedback-button:hover {
+    color: rgb(148, 107, 25);
+}
+
+.buttons {
+    border-bottom:none;
+}
+
+.feedback-input input,textarea, button {
+    font-weight: 700;
+    font-family: 'Tahoma', sans-serif;
+}
+/* Paging */
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+}
+.paging {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 375px;
+    width: 100%;
+    max-width: 1135px;
+}
+
+/* bg top lane */
+.colorv-1 {
+    background-color: rgb(170, 152, 33);
+}
+
+/* bg jungle */
+.colorv-2 {
+    background-color: rgb(2, 248, 2);
+}
+
+/* bg mid lane */
+.colorv-3 {
+    background-color: rgb(102,136,243);
+}
+
+/* bg adc lane */
+.colorv-4 {
+    background-color: rgb(255, 0, 0);
+}
+
+/* bg support lane */
+.colorv-5 {
+    background-color: rgb(20, 104, 89);
+}
+
+/* God rate S+ */
+.rate-colorv1 {
+    color: rgb(0, 255, 0);
+}
+
+/* Strong rate S */
+.rate-colorv2 {
+    color: rgb(101, 221, 0);
+}
+
+/* Good rate A */
+.rate-colorv3 {
+    color: rgb(209, 255, 0);
+}
+
+/* Quite fair rate B */
+.rate-colorv4 {
+    color: rgb(255, 186, 29);
+}
+
+/* Quite weak rate C */
+.rate-colorv5 {
+    color: rgb(241, 121, 34);
+}
+
+/* Bad rate D */
+.rate-colorv6 {
+    color: rgb(255, 0, 0);
+}
+
+/* Top lane border */
+.champ-style-top {
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(162, 124, 49);
+    background-color: rgb(162,124,49);
+}
+
+/* Jungle lane border */
+.champ-style-jungle {
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(0, 255, 0);
+    background-color: rgb(0,255,0);
+}
+
+/* Mid lane border */
+.champ-style-mid {
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(102,136,243);
+    background-color: rgb(102,136,243);
+}
+
+/* ADC lane border */
+.champ-style-adc {
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(255,0,0);
+    background-color: rgb(255,0,0);
+}
+
+/* Support lane border */
+.champ-style-support {
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(20, 104, 89);
+    background-color: rgb(20, 104, 89);
+}
+
+/* Champion role */
+.champ-role-mage {
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(102,136,243);
+    background-color: rgb(102,136,243);
+}
+
+.champ-role-assassin {
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(126, 22, 29);
+    background-color: rgb(126, 22, 29);
+}
+
+.champ-role-fighter {
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(162, 124, 49);
+    background-color: rgb(162, 124, 49);
+}
+
+.champ-role-tank {
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(54, 60 ,120);
+    background-color: rgb(54, 60 ,120);
+}
+
+.champ-role-marksman {
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(80, 99 , 69);
+    background-color: rgb(80, 99 , 69);
+}
+
+.champ-role-support {
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(20, 104, 89);
+    background-color: rgb(20, 104, 89);
+}
+
+
+
+/* Champ background */
+.champ-bg-mage {
+    background-color: rgb(102,136,243);
+    
+}
+
+.champ-bg-assassin {
+    background-color: rgb(126, 22, 29);
+    
+}
+
+.champ-bg-fighter {
+    background-color: rgb(162, 124, 49);
+    
+}
+
+.champ-bg-tank {
+    background-color: rgb(54, 60 ,120);
+    
+}
+
+.champ-bg-marksman {
+    background-color: rgb(80, 99 , 69);
+    
+}
+
+.champ-bg-support {
+    background-color: rgb(20, 104, 89);
+   
+}

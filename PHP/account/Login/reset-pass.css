@@ -1,0 +1,36 @@
+.home-back {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.notify-check {
+    font-size: .9em;
+    color: green;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.success {
+    font-size: .9em;
+    color: #90ee90;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.error {
+    font-size: .9em;
+    color: red;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}

@@ -1,0 +1,10 @@
+- CHỦ ĐỀ : HÀNH CHÍNH - - THƯƠNG MẠI
++ HÀNH CHÍNH: TRANG CHỦ - MENU - TRANG LIÊN HỆ - CÁC MỤC CON
+QNU : QUẢN LÍ SV, ĐOÀN THỂ
++WEB THƯƠNG MẠI: HOME - SẢN PHẨM( CHIA NHÓM SP)
++ GIẢI TRÍ: NHẠC - PHIM - DU LỊCH
+
+- CÁC ĐỐI TƯỢNG CẦN QUẢN LÍ: 
+- CÁC CHỨC NĂNG:
+- MÔ HÌNH CỦA TRANG:
+- SỐ LƯỢNG TRANG(TÊN TRANG)

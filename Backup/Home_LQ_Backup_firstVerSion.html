@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>META liên quân</title>
+    <link rel="icon" href="../Images/unnamed.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/3v3.css">
+</head>
+
+<body class="wrapper-page" style="background-position-y: 0px !important;">
+    <div class="content-body">
+        <!--Header-->
+        <div id="head-wrapper" class="hd-wr _bca1">
+            <!--Menu header-->
+            <div class="head-menu">
+                <nav class="nav-top">
+                    <div class="inner">
+                        <a class="logo" href="#">
+                            <img src="../Images/Icon-Logo/N5-removebg-preview.png" alt="logo">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="head-content">
+                <div class="welcome-para">
+                    <h2 class="welcome">Welcome to <span class="welcome-span"> Meta Liên Quân</span></h2>
+                </div>
+            </div>
+        </div>
+        <!--Menu-->
+        <div id="menu-wrapper" class="mu-wr _bca1">
+            <div class="tab-link info-tab">
+                <ul class="nav-menu">
+                    <li>
+                        <a id="1" href="#">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col">
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="checkbox" id="chck1" class="menu-input">
+                                        <label class="tab-label" for="chck1" class="menu-input">Bản đồ</label>
+                                        <div class="tab-map">
+                                            <p>1v1</p>
+                                            <p>3v3</p>
+                                            <p>5v5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col">
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="checkbox" id="chck2" class="menu-input">
+                                        <label class="tab-label" for="chck2" class="menu-input">Patch</label>
+                                        <div class="tab-patch">
+                                            <p>Patch 13.15</p>
+                                            <p>Patch 13.14</p>
+                                            <p>Patch 13.13</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="empty-wrapper">
+                <div>
+                    <a href="https://lienquan.garena.vn/" target="_blank">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--Content-->
+        <div class="ct-02 ge-ct">
+            <div class="ct-02-inner">
+                <div class="bx-wrapper">
+                    <div class="ge-ct" style="display: flex;flex-direction: column;width: 100%;">
+                        <div class="para" style=" width: 100%;max-width: 500px;">
+                            <h1 style="display: flex;flex-direction: column;text-align: center;margin-bottom: 3px;">
+                                <div class="text">
+                                    <div class="logo-text">
+                                        <a class="text-inner" href="#">
+                                            <span style="color: rgb(251, 175, 23);">META</span>
+                                            <span>liênquân</span>
+                                        </a>
+                                    </div>
+                                    <div class="text-details">
+                                        Xây dựng lối chơi, trang bị, ngọc,...
+                                    </div>
+                                    <div class="text-map">
+                                        <a style="color: inherit; margin: 5px; font-size: 21px" href="Home.php">
+                                            <span class="text-underline">5v5</span>
+                                        </a>
+                                        <span> - </span>
+                                        <a style="color: rgb(251, 175, 23); margin: 5px; font-size: 21px;" href="#">
+                                            <span class="text-underline">3v3</span>
+                                        </a>
+                                        <span> - </span>
+                                        <a style="color: inherit; margin: 5px; font-size: 21px" href="1v1.php">
+                                            <span class="text-underline">1v1</span>
+                                        </a>
+                                    </div>
+                                    <span style="display: none;">Meta Liên Quân</span>
+                                    </span>
+                                </div>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="bx-search">
+                        <form class="search">
+                            <input type="text" class="input-bx" id="filter-name" placeholder="Tìm kiếm...">
+                        </form>
+                    </div>
+                </div>
+                <div class="bx-champions">
+                    <ul class="list-champ">
+                        <?php
+                        require_once 'connect.php';
+                        $sql_champ = "SELECT * FROM champions";
+                        $sql_role = "SELECT * FROM role_champions, champions
+                        WHERE role_champions.id_role = champions.id_role";
+                        $result = mysqli_query($conn, $sql_role);
+                        if (mysqli_num_rows($result) > 0) {
+                            while ($row = mysqli_fetch_assoc($result)) {
+                                $id = $row['ID'];
+                                $name = $row['champ_Name'];
+                                $image = $row['image'];
+                                $role_name = $row['name_role'];
+                                echo '<li id="champion-' . $id . '" class="list-champion">
+                                <span class="serial" tag="' . $role_name . '"
+                                type="' . $id . '" style="display: none">' . $name . '</span>
+                                <div class="champions">
+                                    <a href="champion.php?id=' . $id . '">
+                                        <img src="../Images/Champions/' . $image . '" alt="champion">
+                                    </a>
+                                    <p style="white-space: nowrap;" class="name">' . $name . '</p>
+                                </div>
+                            </li>';
+                            }
+                        }
+                        ?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

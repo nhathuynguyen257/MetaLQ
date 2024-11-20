@@ -1,0 +1,316 @@
+/* Path: Project_Web\Home.css */
+
+html {
+    overflow-y: scroll;
+    font-size: 10px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../Images/5v5.png) center center fixed no-repeat;
+    font-family: monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(37,37,37,.85);
+    z-index: -1;
+}
+
+body,
+div,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dd,
+dt,
+blockquote,
+fieldset,
+legend,
+label,
+textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    outline: none !important;
+}
+
+div {
+    display: block;
+}
+
+
+button {
+    background: #fff;
+    border: none;
+    outline: none !important;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: rgb(0,0,0);
+    text-decoration: none;
+    outline: none!important;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+
+/* Head wrapper */
+
+
+._bca1{
+    background-color: rgb(22, 14, 30);
+}
+
+.inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.mu-wr {
+    position: fixed;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    top: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    z-index: 999;
+}
+
+.head-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-top {
+    background: url(https://lienquan.garena.vn/asset/images/bg-nav-top.png) top center no-repeat;
+    height: 156px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.logo {
+    height: 1px;
+    position: absolute;
+    top: -50px;
+    left: 400px;
+    margin-left: 70px;
+}
+
+.head-content {
+    position: relative;
+    margin-top: 0px;
+    background-color: rgba(20, 19, 19, 0.4);
+}
+
+.content-body {
+    position: relative;
+    margin-top: 0px;
+    background-color: rgba(20, 19, 19, 0.4);
+}
+/* content wrapper */
+
+.ch-ct {
+    gap: 40px;
+    grid-gap:40px;
+}
+
+.ch-ct {
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+}
+.background {
+    background-image: linear-gradient(45deg, rgb(17,17,17), transparent), url(../Images/Background/Illumia_bg.jpg);
+    width: 100%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+.content-wrapper {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1815px;
+    margin: 0 auto;
+}
+
+.champ-img {
+    position: relative;
+    width: 100%;
+    min-height: 120px;
+    min-width: 120px;
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 50%;
+    display: flex;
+    box-shadow: black 0px 0px 10px;
+    background-size: 120px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../Images/Champions/Illumia.jpg);
+}
+
+.color-bg {
+    background-color: rgb(55, 55, 55);
+    background-blend-mode: luminosity;
+}
+
+.champ-style {
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(102, 136, 243);
+    background-color: rgb(102, 136, 243);
+}
+
+.img-role {
+    filter: drop-shadow(0 0 1px black);
+    margin: 3px;
+}
+
+.title {
+    text-shadow: 0 0 10px #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-inner2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.sp-ct {
+    margin-top: 7%;
+}
+.spct-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sp-a1 {
+    flex-direction: row;
+}
+
+.sp-pos {
+    position: absolute;
+    padding-right: 0;
+    overflow: hidden;
+}
+
+.map-mode {
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ge-st {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid;
+    filter: drop-shadow(0 0 10px black);
+}
+
+.ge-st.active {
+    border-bottom-color: rgb(251, 175, 23)!important;
+}
+
+.ge-st.active .text-hover {
+    color: rgb(251, 175, 23)!important;
+}
+.name-map {
+    white-space: nowrap;
+    color: #fff;
+    font-size: 15px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    grid-gap: 5px;
+}
+
+
+
+
+/* Description */
+.descript {
+    text-shadow: 0 0 20px #000;
+}
+
+.descript-pos {
+    margin-top: 8px;
+    border-top: 2px solid gray;
+}
+
+.descript-bg {
+    background-color: rgba(1,1,1,.6);
+}
+
+.descript-text {
+    display: flex;
+    white-space: nowrap;
+}
+
+.tier-value {
+    color:rgb(0, 255, 0);
+}
+
+
+
+

@@ -1,0 +1,461 @@
+/* Path: Project_Web\3v3.css */
+
+html {
+    overflow-y: scroll;
+    font-size: 10px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../Images/Map/3v3-map.png) center center fixed no-repeat;
+    font-family: monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 1600px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+body,
+div,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dd,
+dt,
+blockquote,
+fieldset,
+legend,
+label,
+textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    outline: none !important;
+}
+
+div {
+    display: block;
+}
+
+
+a {
+    color: #000;
+    text-decoration: none;
+    outline: none !important;
+}
+
+button {
+    background: #fff;
+    border: none;
+    outline: none !important;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Head wrapper */
+
+.hd-wr {
+    width: 1600px;
+    float: left;
+}
+._bca1{
+    background-color: rgb(22, 14, 30);
+}
+
+.inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.mu-wr {
+    position: fixed;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    top: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    z-index: 999;
+}
+
+.head-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-top {
+    background: url(https://lienquan.garena.vn/asset/images/bg-nav-top.png) top center no-repeat;
+    height: 156px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.logo {
+    height: 1px;
+    position: absolute;
+    top: -50px;
+    left: 400px;
+    margin-left: 70px;
+}
+
+.head-content {
+    position: relative;
+    margin-top: 0px;
+    background-color: rgba(20, 19, 19, 0.4);
+}
+
+.welcome-para {
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.welcome {
+    color: rgb(255, 238, 0);
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.welcome-para {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 70px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#para {
+    color: #fff;
+    width: 100px;
+}
+
+/* Menu */
+.mu-wr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 200px; 
+    margin-top: -20px;
+}
+
+.mu-wr:not(:hover) {
+    width: 80px;
+}
+
+.mu-wr {
+    transition: width .4s ease .1s;
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    user-select: none;
+}
+
+.mu-wr {
+    overflow: auto;
+}
+
+@media only screen and(min-device-width:1024px) {
+    .nav-cl::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+}
+
+@media only screen and(min-device-width: 1024px) {
+    .nav-cl::-webkit-scrollbar-thumb {
+        background-color: dimgray;
+        border-radius: 3px;
+    }
+}
+
+.nav-menu {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+    line-height: 2;
+}
+
+.nav-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    z-index: 999;
+    height: 12000px;
+}
+
+.nav-menu li {
+    font-weight: 700;
+}
+
+.nav-menu a {
+    color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+
+}
+
+.nav-menu a:hover {
+    color: #fff;
+}
+
+/* Menu wrapper */
+.mu-wr {
+    transition: width .4s ease .1s;
+    position: relative;
+    top: 20px;
+    z-index: 999;
+    float: left;
+    height: 1500px;
+}
+
+.menu-wrapper {
+    visibility: hidden;
+}
+
+/* Menu button */
+.menu-input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    
+}
+
+.row {
+    display: flex;
+}
+
+.row .col {
+    flex: 1;
+}
+
+/* make border */
+.tabs {
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.tab {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+}
+
+/* The style for the tab label. */
+.tab-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background: #2c3e50;
+    font-weight: bold;
+    cursor: pointer;
+    /* Icon */
+}
+
+.tab-label:hover {
+    background: #34495e;
+}
+
+/* create arrow */
+.tab-label::after {
+    content: "❯";
+    width: 1.3em;
+    height: 1.3em;
+    text-align: center;
+    transition: all 0.35s;
+    transform: rotate(-90deg);
+}
+
+.tab-map {
+    max-height: 0;
+    color: #2c3e50;
+    background: white;
+    transition: all 0.35s;
+    cursor: pointer;
+}
+
+input:checked+.tab-label {
+    background: #1a252f;
+}
+
+input:checked+.tab-label::after {
+    transform: rotate(90deg);
+}
+
+/* make map list move */
+input:checked~.tab-map {
+    max-height: 300px;
+    max-width: 100%;
+}
+
+.tab-patch {
+    max-height: 0;
+    color: #2c3e50;
+    background: white;
+    transition: all 0.35s;
+    cursor: pointer;
+}
+
+input:checked~.tab-patch {
+    max-height: 300px;
+    max-width: 100%;
+}
+
+h3 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* main content */
+.ct-02 {
+    width: 1380px;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+
+.text-details {
+    font-size: 21px;
+    font-weight: normal;
+    margin: 15px;
+}
+
+.bx-search {
+    padding: 0 0 5% 0;
+}
+
+@media only screen and(min-device-width: 0px) {
+    .search {
+        width: 100%;
+    }
+}
+
+.search {
+    background: #000 url(../Images/bt-search.png) right center no-repeat;
+    background-size: auto 100%;
+    padding: 0 30px 0 0;
+    border: 2px solid #a08945;
+    width: 50%;
+    text-align: center;
+}
+
+.input-bx {
+    border: none;
+    background-color: transparent;
+    line-height: 40px;
+    color: #acacac;
+    width: 100%;
+}
+
+/* Champions */
+
+.list-champ {
+    overflow: hidden;
+    width: 70%;
+}
+.list-champ li .champions {
+    padding:15%;
+}
+.list-champ li .champions .name {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.list-champ li .champions img {
+    width: 100%;
+    border: 3px solid #a08945;
+}
+
+.list-champ li {
+    width: 14.111%;
+    float: left;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    .list-champ li {
+        width: 33.3333%;
+    }
+}
+
+.bx-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1380px;
+    position: relative;
+    z-index: 1;
+    left: 250px;
+}
+
+.text-underline:hover {
+    font-style:italic;
+    color: rgb(251, 175, 23);
+}

@@ -1,0 +1,27 @@
+ID = "1": Pháp sư
+ID = "2": Xạ thủ
+ID = "3": Đấu sĩ
+ID = "4": Đỡ đòn
+ID = "5": Trợ thủ
+ID = "6": Sát thủ
+
+## 2. Quy định dữ liệu Tier
+### 2.1. Tier của stats
+winrate > 55: Tier S+
+winrate > 50 < 55: Tier S-
+winrate > 45 < 50: Tier A
+winrate > 40 < 45: Tier B
+winrate > 35 < 40: Tier C
+winrate < 30: Tier D
+
+### 2.2. Tier của tướng
+winrate >= 55: Tier S+
+winrate >= 50 < 55: Tier S
+winrate >= 45 < 50: Tier A
+winrate >= 40 < 45: Tier B
+winrate >= 35 < 40: Tier C
+winrate <= 30: Tier D
+Out meta: Off meta
+
+
+

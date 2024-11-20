@@ -1,0 +1,772 @@
+/* Champions */
+/* Css cho tuong */
+
+html {
+    overflow-y: scroll;
+    font-size: 10px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../Images/5v5.png) center center fixed no-repeat;
+    font-family: monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(37,37,37,.85);
+    z-index: -1;
+}
+
+body,
+div,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dd,
+dt,
+blockquote,
+fieldset,
+legend,
+label,
+textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    outline: none !important;
+}
+
+div {
+    display: block;
+}
+
+
+button {
+    background: #fff;
+    border: none;
+    outline: none !important;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: rgb(0,0,0);
+    text-decoration: none;
+    outline: none!important;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    height: auto;
+    border: 0 nobackground-colorne;
+    max-width: 100%;
+}
+/* the div contains all the page */
+/* Content wrapper */
+.content-wrapper {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+/* grid cua page */
+.ch-ct {
+    gap: 40px;
+    grid-gap:40px;
+}
+/* nền của page */
+.color-bg {
+    background-color: rgb(55, 55, 55);
+}
+/* css của body guilding đầu tiên */
+.sp-a1 {
+    position: absolute;
+    padding-right: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img-role {
+    filter: drop-shadow(0 0 1px black);
+    margin: 3px;
+}
+/* tiêu đề của body guilding đầu tiên */
+.title {
+    text-shadow: 0 0 10px #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* title Lane Patch */
+.title-inner2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+/* css của 3 phần gồm: ảnh của tướng và title */
+.spct-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.map-mode {
+    width: 100%;
+    margin-top:2.6%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.name-map {
+    white-space: nowrap;
+    color: #fff;
+    font-size: 15px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    grid-gap: 5px;
+}
+
+.wrapper-page {
+    min-width: 805px;
+}
+/* Head wrapper */
+.content {
+    display: flex;
+    width: 100%;
+}
+/* background color all page */
+._bca1{
+    background-color: rgb(22, 14, 30);
+}
+
+.logo {
+    width: 250px;
+    position: absolute;
+    top:-50px;
+    left: 50%;
+    margin-left: -130px;
+}
+/* Menu top */
+.menu-top {
+    overflow: hidden;
+}
+
+/* Menu top li tag */
+.menu-top li {
+    float: left;
+}
+
+/* create a line between menu top */
+.menu-top li a {
+    color: rgb(255,255,255);
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 60px;
+    display: inline-block;
+    background: url(../Images/Icon-Logo/line-nav.jpg) center left no-repeat;
+}
+/* show the login first */
+.menu-top li:nth-of-type(1) {
+    float: right;
+}
+
+/* show the register second */
+.menu-top li:nth-of-type(2){
+    float: right;
+}
+
+.menu-top li:nth-of-type(2) a {
+    background: none;
+}
+/* css of the body */
+.content-body {
+    position: relative;
+    margin-top: 0px;
+    background-color: rgba(20, 19, 19, 0.4);
+}
+/* css of the border's information champion */
+.tp-cr {
+    width: 100%;
+    min-width: 375px;
+}
+/* css of the present paragraph */
+.para-inner {
+    text-align: left;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+/* Guiding content css */
+.h-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 375px;
+    width: 100%;
+    max-width: 1600px;
+}
+/* css of the lane and role */
+.lane-content {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+/* divide grid */
+.content-details {
+    gap:10px;
+    grid-gap: 10px;
+}
+/* css of the lane part */
+.text-ac {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid ;
+    filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+}
+
+/* the empty space between menu */
+.empty-space {
+    width: 320px;
+    flex-shrink: 0;
+}
+
+/* Adjust the circle lane and role */
+.image-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1.0/1.0;
+}
+/* css of the role champion */
+.champ-role {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+/* css of the lane champion */
+.champ-lane {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+/* Adjust the circle lane and role */
+/* Adjust the border of the first box */
+.spct-st {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    width: 100%;
+    max-width: 1475px;
+    z-index: 99;
+    position: relative;
+}
+
+/* The above code is a CSS code that targets all direct child elements of an element with the class
+"tp-cr". It sets the display property of those child elements to "flex" and aligns them horizontally
+at the center of their parent element using the "justify-content" property. */
+.tp-cr>* {
+    display: flex;
+    justify-content: center;
+}
+/* Description */
+/* điều chỉnh bóng của chữ */
+.descript {
+    text-shadow: 0 0 20px #000;
+}
+
+/* điều chỉnh vị trí của phần đầu tiên của content */
+.descript-pos {
+    margin-top: 8px;
+    margin-left: -8px;
+    border-top: 2px solid gray;
+}
+/* tạo màu nền */
+.descript-bg {
+    background-color: rgba(1,1,1,.6);
+    margin-right: -8px;
+}
+/* giãn cách giữa các td(ví dụ như winrate:40%) */
+.descript-text {
+    display: flex;
+    white-space: nowrap;
+}
+
+.tier-value {
+    color: rgb(5, 109, 255)
+}
+/* background của phần đầu tiên của body guilding*/
+.background {
+    width: 100%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+/* Body content guiding css */
+/* phân chia từng vùng */
+.ge-st {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid;
+    filter: drop-shadow(0 0 10px black);
+}
+
+.ge-st.active {
+    border-bottom-color: rgb(251, 175, 23)!important;
+}
+
+.ge-st.active .text-hover {
+    color: rgb(251, 175, 23)!important;
+}
+.bct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 375px;
+    width: 100%;
+    max-width: 1600px;
+}
+/* phân chia từng vùng */
+.ct-grid {
+    gap: 5px;
+    grid-gap: 5px;
+}
+/* css phân đều từng vùng */
+.bct-inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/* css của vùng spell, start_items và runes */
+.bct-paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+/* nền của từng vùng body guiding */
+.bct-bg {
+    background-color: rgb(75,75,75);
+}
+
+/* css của title */
+.bct-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+/* css các data bên trong các vùng */
+.bct-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    flex-grow: 1;
+}
+/* viền chính của các data chính */
+.group-gap {
+    box-sizing: border-box;
+    border: 2px solid rgb(251 175 23);
+}
+/* css của spell */
+.spell {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* css ảnh của spell */
+.spell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/* điều chỉnh các vùng của body guiding */
+.bct-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    flex-grow: 1;
+    width: calc(50% - 2.5px);
+    min-width: 375px;
+    max-width: 100%;
+}
+/* áp dụng width cho các vùng */
+.bct-text>* {
+    width: 100%;
+    flex-shrink: 1;
+
+}
+/* điều chỉnh text của rating */
+.rating {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+.win {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.pick {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+/* nền đen xám của rating-inner chẵn */
+.rating-inner:nth-child(odd) {
+    background-color: #252525;
+}
+/* nền xám của rating-inner lẻ */
+.rating-inner:nth-child(even) {
+    background-color: #353535;
+}
+
+img {
+    vertical-align: middle;
+}
+/* css các spell khác */
+.other-spell {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 4px;
+}
+/* Items */
+.items {
+    padding: 5px;
+    margin: 0;
+    height: auto;
+    vertical-align:top;
+    box-sizing: border-box;
+}
+
+.items-pos {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 4px;
+}
+
+.items-st {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.itemsin-st {
+    box-sizing: border-box;
+    border: none;
+}
+
+.badge {
+    width:20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.badge-st {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.be {
+    width: 66px;
+}
+
+.badge-2 {
+    position: relative;
+    top:-40px;
+    left:18px;
+    margin-bottom: -38px;
+}
+
+
+.ct-sd {
+    display: flex;
+    flex-direction: column;
+}
+
+/* SKill table */
+.skill-table {
+    display: inline-block;
+    float: none;
+    text-align: left;
+}
+
+.skills {
+    background-color: #252525;
+}
+
+.skill-inner {
+    padding-right: 3px;
+    padding-left: 3px;
+    text-align: center;
+    border-left: 1px solid #000;
+    border-right:1px solid #000;
+    font-size: 18px;
+    min-width: 20px;
+    font-weight: 700;
+}
+
+@media (max-width:965px) {
+    .skill-inner {
+        font-size: 10px;
+        padding-right: 2px;
+        padding-left: 2px;
+        min-width: 14px;
+    }
+}
+.skills-st {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+td, th {
+    padding: 0;
+}
+
+.spec-item {
+    box-sizing: border-box;
+    border:2px solid rgb(251 175 23);
+
+}
+
+.hidden {
+    display: none!important;
+}
+/* css viền của runes đen khi hover */
+.badge .activerunes-image {
+    -webkit-filter: grayscale(.9);
+    filter: grayscale(.9);
+}
+
+.tab-selected .activerunes-image {
+    -webkit-filter: none;
+    filter: none;
+}
+/* css viền của runes */
+.b-hover .drop-hover {
+    -webkit-filter: drop-shadow(1px 1px 0 #FBAF17) drop-shadow(-1px 1px 0 #FBAF17) drop-shadow(1px -1px 0 #FBAF17) drop-shadow(-1px -1px 0 #FBAF17) drop-shadow(black 0px 0px 5px)
+    !important;
+    filter: drop-shadow(1px 1px 0 #FBAF17) drop-shadow(-1px 1px 0 #FBAF17) drop-shadow(1px -1px 0 #FBAF17) drop-shadow(-1px -1px 0 #FBAF17) drop-shadow(black 0px 0px 5px)
+    !important
+}
+
+.b-hover:hover .drop-no-shadow {
+    -webkit-filter: drop-shadow(1px 1px 0 #FBAF17) drop-shadow(-1px 1px 0 #FBAF17) drop-shadow(1px -1px 0 #FBAF17) drop-shadow(-1px -1px 0 #FBAF17)
+    !important;
+    -o-filter: drop-shadow(1px 1px 0 #FBAF17) drop-shadow(-1px 1px 0 #FBAF17) drop-shadow(1px -1px 0 #FBAF17) drop-shadow(-1px -1px 0 #FBAF17)
+    !important;
+    filter: drop-shadow(1px 1px 0 #FBAF17) drop-shadow(-1px 1px 0 #FBAF17) drop-shadow(1px -1px 0 #FBAF17) drop-shadow(-1px -1px 0 #FBAF17)
+    !important
+}
+
+/* COUNTERS */
+/* filter lane and search bar */
+@media(max-width:1605px) {
+
+    .counters {
+        gap: 3px;
+        grid-gap:3px;
+        flex-direction: column;
+    }
+}
+.counters {
+    display: flex;
+}
+
+@media(max-width:1605px) {
+    .counters>* {
+        width: 100%!important;
+    }
+}
+@media(max-width:1605px) {
+    .tkln-name {
+        display: none!important;
+    }
+}
+
+.te-st>* {
+    width: 100%;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.lane-tick {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: .33%;
+}
+
+.lane-tick:first-child {
+    margin-left: 0;
+}
+
+/* css của phân chia search bar lane(phần counter) */
+.tkln-st {
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    color: #fff!important;
+}
+
+/* css khi tick vao lane */
+.tick-st {
+    display: inline-block;
+    border: 1px solid #777;
+    border-radius: 5px;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin: 3px;
+}
+
+/* search bar */
+.search-counters {
+    margin-right: 0;
+    color: #000;
+    padding-right: 0;
+    padding-left: 0;
+    width: 20%;
+}
+/* css border khi da tick vao lane */
+.tkln-st :checked+span>.tick-st {
+    background-color: #fbaf17;
+    border-color: #000;
+}
+
+/* champion counters part */
+.counter-content {
+    padding: 10px;
+}
+
+.champct-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.counters-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* css các ô tướng counter và bị counter */
+.champct-item {
+    padding: 5px 5px 0;
+    margin: 0;
+    height: auto;
+    vertical-align: top;
+    border: 1px solid #000;
+    box-shadow: 0 0 5px #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/* độ rộng của các ô tướng counter và bị counter */
+.champct-st {
+    width: 60px;
+}
+
+.counters-st {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* tên tướng counter và bị counter */
+.champct-name {
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    margin: 5% 0;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/
+
+/* champ lane and role */
+.champ-border {
+    box-shadow: inset 0 0 1px 1px #000;
+}
+

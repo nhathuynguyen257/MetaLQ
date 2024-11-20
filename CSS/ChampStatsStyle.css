@@ -1,0 +1,75 @@
+.rating-cell {
+    padding:4px;
+    vertical-align: middle;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.rating-inner:hover {
+    background-color: #000!important;
+}
+
+.rating-txt {
+    width: 80px;
+    height: 20px;
+    padding-top: 2px;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+}
+
+.rt-hv:hover {
+    cursor: pointer;
+    background-color: #fbaf17;
+    color: #000
+}
+
+.th-st {
+    font-weight: 800;
+    padding: 4px 16px 4px 4px;
+    text-align: center;
+    white-space: nowrap;
+    width: 250px;
+}
+
+
+.tablesorter-header {
+    background-image: url(../Images/Icon-Logo/bg.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    cursor: pointer
+}
+
+.tablesorter-headerAsc {
+    background-image: url(../Images/Icon-Logo/asc.png);
+    background-color: #fbaf17;
+    color: #000
+}
+
+.tablesorter-headerAsc .coin {
+    -webkit-filter: brightness(0);
+    -o-filter: brightness(0);
+    filter: brightness(0)
+}
+
+.tablesorter-headerDesc {
+    background-image: url(../Images/Icon-Logo/desc.png);
+    background-color: #fbaf17;
+    color: #000
+}
+
+.tablesorter-headerDesc .coin {
+    -webkit-filter: brightness(0);
+    -o-filter: brightness(0);
+    filter: brightness(0)
+}
+
+.trend-color1 {
+    color: rgb(2, 248, 2);
+}
+
+.trend-color2 {
+    color: rgb(255, 0, 0);
+}
+

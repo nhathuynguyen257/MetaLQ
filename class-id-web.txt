@@ -1,0 +1,88 @@
+--Home--
+ge-ct: content chung(chỉ grid)
+ct-01: content đầu
+ct-02: content thứ 2
+bx-wrapper: box-wrapper
+bx-champion: box-champion
+
+/* Header */
+hd-wr: header-wrapper
+_bca1: body content a1
+hd-ct: header-content
+tab-link: tab-link(ben trong the mu-wr)
+
+/* Menu */
+mu-wr: menu-wrapper
+_bca1: body content a1(ap dung lai css)
+nav-menu: navigation cua menu(thanh dieu huong, id)
+tab-link: tuong tu cua nav-menu
+/* Content */
+ct-wr: content-wrapper
+ct-gap(chỉ grid nhỏ hơn)
+wr-tt: thuộc tíngshklh css của content-body
+
+--Champion--
+ch-ct: content chung
+hr-if: header-info (thông tin header)
+sp-a1: splash-1 ( vùng splash a1)
+tp-cr: tooltip-container( vùng tooltip)
+descript-bg: descript-background (vùng background của descript)
+descript-pos: position (vị trí của descript)
+ge-st: thuộc tính chung của map-mode( map-mode chung)
+spct: splash-content( vùng content của splash)
+img-inner: img-inner( vùng ảnh của splash)
+inner-title 1: inner-title 1 (vùng title của splash)
+inner-title 2: inner-title 2 (vùng title của splash)
+
+--Guiding content--
+-head content-
+h-content: header-content (vùng header content)
+hr-if: header-info (thông tin header)
+text-ac: text-active (vùng text active)
+bot-ac: bottom-active (vùng bottom active)
+
+-body content-
+b-content: vùng body content
+bct: body-content (vùng body content), nhỏ hơn b-content
+ct-grid: content-grid (vùng content grid) chia vùng
+bct-text: nội dung của bct
+group-gap: khoảng cách giữa các group và tạo border(các spell và items)
+bct-paragraph: nội dung của bct (bên trong bct-text)
+bct-title: title của bct
+bct-p: nội dung của bct (bên trong bct-paragraph)
+bct-bg: background của bct
+spell: class hiển thị bổ trợ(bổ trợ chính)
+rating: class hiển thị rating( tỉ lệ %)
+rating-inner: nội dung của rating
+other-spell: class hiển thị bổ trợ khác( không phải bổ trợ chính)
+items: class hiển thị các trang bị
+items-bg: background của items
+
+badge-st: badge setting
+be: badge( chinh position)
+
+skill-table: bảng skills
+sl-te: skill-table class
+skill-st: skill setting
+
+
+--Footer--
+ft-bg: footer-background
+ep-ct: menu nav content(empty)
+ft-content: content footer(noi dung footer)
+ct-gap: gap cua footer-content(chia vung)
+left-text: text ben trai 
+text-st: setting cua text(css cua text)
+left-grid: vung ben trai(hien thi theo thu tu tu trai sang phai)
+left-para: para ben trai
+para-title: tieu de cua para
+para-st: setting cua vung para(css cua para)
+
+right-text: text ben phai 
+right-para: para ben phai
+
+
+-------------------------STATS-----------------------------------
+rating-cell: cell cua bang rating
+rating-st: setting cua rating(hover)
+
